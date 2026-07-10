@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,6 +102,8 @@ h1{
     justify-content:space-between;
     margin-top:18px;
     font-weight:bold;
+    gap:10px;
+    flex-wrap:wrap;
 }
 
 .website-row a{
@@ -146,10 +149,11 @@ h1{
     font-size:12px;
 }
 
-@media(max-width:768px){
+/* MOBILE */
+@media (max-width:768px){
 
 .container{
-    flex-direction:column;
+    flex-direction:column-reverse; /* Contact first, Demo below */
 }
 
 .demo,
@@ -165,8 +169,30 @@ iframe{
     padding:20px;
 }
 
+h1{
+    font-size:28px;
 }
 
+.sub{
+    font-size:16px;
+}
+
+.feature{
+    font-size:16px;
+}
+
+.cta{
+    font-size:20px;
+    padding:16px;
+}
+
+.website-row{
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+}
 </style>
 
 </head>
@@ -175,82 +201,84 @@ iframe{
 
 <div class="container">
 
-<div class="demo">
-<iframe src="https://www.ice777.me/"></iframe>
-</div>
+    <!-- Demo Section -->
+    <div class="demo">
+        <iframe src="https://www.ice777.me/"></iframe>
+    </div>
 
-<div class="right">
+    <!-- Contact Section -->
+    <div class="right">
 
-<div class="box">
+        <div class="box">
 
-<div class="badge">
-VIP Manual ID Available
-</div>
+            <div class="badge">
+                VIP Manual ID Available
+            </div>
 
-<h1>GET YOUR ID NOW</h1>
+            <h1>GET YOUR ID NOW</h1>
 
-<p class="sub">
-Fast manual ID service with easy deposit support.
-New users can start quickly through WhatsApp.
-</p>
+            <p class="sub">
+                Fast manual ID service with easy deposit support.
+                New users can start quickly through WhatsApp.
+            </p>
 
-<div class="features">
+            <div class="features">
 
-<div class="feature">
-Minimum Deposit:
-<span>₹100 Only</span>
-</div>
+                <div class="feature">
+                    Minimum Deposit:
+                    <span>₹100 Only</span>
+                </div>
 
-<div class="feature">
-Welcome Bonus:
-<span>10%</span>
-</div>
+                <div class="feature">
+                    Welcome Bonus:
+                    <span>10%</span>
+                </div>
 
-<div class="feature">
-Manual ID Support:
-<span>WhatsApp Only</span>
-</div>
+                <div class="feature">
+                    Manual ID Support:
+                    <span>WhatsApp Only</span>
+                </div>
 
-<div class="feature">
-Quick Help:
-<span>Deposit &amp; Withdrawal Support</span>
-</div>
+                <div class="feature">
+                    Quick Help:
+                    <span>Deposit &amp; Withdrawal Support</span>
+                </div>
 
-</div>
+            </div>
 
-<div class="website-row">
+            <div class="website-row">
 
-<a class="website" href="https://www.ice777.me" target="_blank">
-🌐 www.ice777.me
-</a>
+                <a class="website" href="https://www.ice777.me" target="_blank">
+                    🌐 www.ice777.me
+                </a>
 
-<a class="whatsapp-small"
-href="https://wa.me/+447546796844"
-target="_blank">
-💬 WhatsApp
-</a>
+                <a class="whatsapp-small"
+                   href="https://wa.me/+447546796844"
+                   target="_blank">
+                    💬 WhatsApp
+                </a>
 
-</div>
+            </div>
 
-<a class="cta"
-href="https://wa.me/+447546796844?text=Hello%20I%20want%20new%20manual%20ID"
-target="_blank">
-📲 WhatsApp Now
-</a>
+            <a class="cta"
+               href="https://wa.me/+447546796844?text=Hello%20I%20want%20new%20manual%20ID"
+               target="_blank">
+                📲 WhatsApp Now
+            </a>
 
-<div class="trust">
-✅ Trusted Manual Support<br>
-✅ Simple Process<br>
-✅ Fast Response
-</div>
+            <div class="trust">
+                ✅ Trusted Manual Support<br>
+                ✅ Simple Process<br>
+                ✅ Fast Response
+            </div>
 
-<div class="footer">
-18+ Only | Play Responsibly | Follow Your Local Laws | T&amp;C Apply
-</div>
+            <div class="footer">
+                18+ Only | Play Responsibly | Follow Your Local Laws | T&amp;C Apply
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </div>
 
